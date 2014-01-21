@@ -19,8 +19,9 @@ public class TaskController {
 	@RequestMapping("/index")
 	public String setupForm(Map<String,Object> map){
 		map.put("task", task);
+		map.put("task2", task);
 		map.put("taskList", taskService.getAll());
-		return "task";
+		return "task2";
 	}
 	
 //	@RequestMapping(value="/student.do",method=RequestMethod.POST)
